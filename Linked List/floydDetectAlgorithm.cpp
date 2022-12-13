@@ -29,17 +29,18 @@ Node* floydDetectLoop(Node*);
 Node* beginingNode(Node*);
 
 // Removes the loop T.C = O(n) S.c. = O(1)
-void removeLoop( Node* head ){
+Node* removeLoop( Node* head ){
      if(head == NULL )
-        return;
+        return NULL;
     Node* startOfLoop = beginingNode(head);
     if(startOfLoop==NULL)
-        return;
+        return head;
     Node* temp = startOfLoop;
     while(temp->next != startOfLoop ) {
         temp = temp->next;
     }
     temp->next = NULL;
+    return head;
 }
 
 // Returns Begining Node of the Loop
@@ -65,9 +66,9 @@ Node* floydDetectLoop( Node* head ) {
     Node* slow = head;
     Node* fast = head;
 
-    while(slow!=NULL and head!=NULL){
+    while(slow!=NULL and fast!=NULL){
         fast = fast->next;
-        if( fast->next != NULL )
+        if( fast!= NULL && fast->next != NULL )
             fast = fast->next;
         slow = slow->next;
         if( slow == fast )
@@ -107,8 +108,8 @@ int main()
     third->next = fourth;
     fourth->next = fifth;
     fifth->next = sixth;
-    sixth->next = head;
-    cout<<std::boolalpha<<detectLoop(head)<<endl<<floydDetectLoop(head)->data<<endl<<beginingNode(head)->data<<endl<<endl;
+    sixth->next = NULL;
+    // cout<<std::boolalpha<<detectLoop(head)<<endl<<floydDetectLoop(head)->data<<endl<<beginingNode(head)->data<<endl<<endl;
     removeLoop(head);
     print(head);
 
