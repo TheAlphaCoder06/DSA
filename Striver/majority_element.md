@@ -50,6 +50,15 @@ int majorityElement(vector<int> v) {
 
 ## Moore’s Voting Algorithm
 
+
+<div style="display: flex; align-items: center; flex-wrap: wrap">
+  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-163852.png" />
+  <img src="https://takeuforward.org/wp-content/uploads/2023/03/image.png" />
+  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-164012.png" />
+  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-164100.png" />
+</div>
+
+
 ```cpp
 int majorityElement(vector<int> v) {
 
@@ -79,18 +88,8 @@ int majorityElement(vector<int> v) {
 }
 ```
 
-## Moore's Voting Algorithm modified
 
-
-<div style="display: flex; align-items: center; flex-wrap: wrap">
-  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-163852.png" />
-  <img src="https://takeuforward.org/wp-content/uploads/2023/03/image.png" />
-  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-164012.png" />
-  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-164100.png" />
-</div>
-
-
-> If it's mentioned in question that majority element exists then only use this approach
+> If it's mentioned in question that majority element exists then only use this code.
 
 
 ```cpp
