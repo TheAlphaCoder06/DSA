@@ -3,6 +3,9 @@
 ## Naive Approach
 
 ```cpp
+//Time Complexity: O(N*N)
+// Space Complexity: O(1)
+
 int majorityElement(vector<int> v) {
 
   int n = v.size();
@@ -25,6 +28,10 @@ int majorityElement(vector<int> v) {
 ## Hash Map Approach
 
 ```cpp
+
+// Time Complexity: O(N + log(N)) + O(N)
+// Space Complexity: O(1)
+
 #include <bits/stdc++.h>
 
 
@@ -52,14 +59,18 @@ int majorityElement(vector<int> v) {
 
 
 <div style="display: flex; align-items: center; flex-wrap: wrap">
-  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-163852.png" />
-  <img src="https://takeuforward.org/wp-content/uploads/2023/03/image.png" />
-  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-164012.png" />
-  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-164100.png" />
+  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-163852.png" width="700px"/>
+  <img src="https://takeuforward.org/wp-content/uploads/2023/03/image.png" width="700px"/>
+  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-164012.png" width="700px"/>
+  <img src="https://takeuforward.org/wp-content/uploads/2023/03/Screenshot-2023-03-18-164100.png" width="700px"/>
 </div>
 
 
 ```cpp
+
+// Time Complexity: 2 O(N)
+// Space Complexity: O(1)
+
 int majorityElement(vector<int> v) {
 
   int n = v.size();

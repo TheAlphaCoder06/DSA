@@ -3,6 +3,10 @@
 ## Brute Force
 
 ```cpp
+
+//Time Complexity: O(n)
+//Space Complexity: O(1)
+
 class Solution {
 public:
     double myPow(double x, int n) {
@@ -21,6 +25,9 @@ public:
 ## Binary Exponentiation
 
 ```cpp
+//Time Complexity: O(logN)
+//Space Complexity: O(1)
+
 class Solution {
 public:
     double myPow(double x, int n) {
